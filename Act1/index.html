@@ -3,24 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>Prueba</title>
 </head>
 
 
 <body>
+    <div class="contenedor">
+        <form id="formulario" class="form">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre">
 
-    <form id="formulario">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre">
-        <br>
-        <label for="mail">Mail de contacto:</label>
-        <input type="text" id="mail">
-        <br>
-        <input type="button" value="Enviar" id="botonSubmit" onclick="mostrarResultados()">
-        <input type="button" value="Reset" id="botonReset" onclick="resetForm()">
+            <label for="mail">Mail de contacto:</label>
+            <input type="text" id="mail">
 
-    </form>
+            <label for="mail">Telefono:</label>
+            <input type="text" id="telefono">
+            <input type="button" class="botonesInput" value="Enviar" id="botonSubmit" onclick="mostrarResultados()">
+            <input type="button" class="botonesInput" value="Reset" id="botonReset" onclick="resetForm()">
+
+        </form>
+    </div>
     <script src="./formulario.js"></script>
 </body>
 
