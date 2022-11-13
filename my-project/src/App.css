@@ -26,6 +26,7 @@
 
 .App-link {
     color: #61dafb;
+    margin-top: 50px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +36,43 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+/* ESTILOS FORMULARIO */
+.contenedor {
+    
+    background-color: cornsilk;
+    border: 5px solid aquamarine;
+    border-radius: 5px;
+}
+
+#formulario {
+    color:#282c34;
+    width: 700px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form * {
+    margin: 5px;
+}
+
+.form .botonesInput {
+    width: 150px;
+    margin: 5px;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+}
+
+.form .botonesInput:hover {
+    transform: scale(1.25);
+    background: rgb(250, 200, 255);
+}
+
+.form input {
+    width: 50%;
+    height: 20px;
 }
