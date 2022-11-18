@@ -1,0 +1,20 @@
+.iconCart{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.iconCart:hover{
+    color: aliceblue;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.align{
+    display: flex;
+    align-items: center;
+}
