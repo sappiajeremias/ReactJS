@@ -1,0 +1,45 @@
+.containerCantidad {
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 90%;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: center;
+  border: 2px solid #39723D;
+  border-radius: 5px;
+}
+.containerCantidad * {
+  margin: 5px;
+}
+
+.botonRestar:disabled,
+.botonRestar:enabled,
+.botonSumar:disabled,
+.botonSumar:enabled {
+  border-color: transparent;
+}
+
+.botonRestar, .botonSumar {
+  width: 150px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.botonRestar:hover {
+
+  border-color: transparent;
+  background-color: #f08aa7;
+}
+
+.botonSumar:hover {
+
+  border-color: transparent;
+  background-color: #9ab99c;
+}
+
+.icono {
+  width: 25px;
+  color: black;
+}

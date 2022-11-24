@@ -1,9 +1,11 @@
 import './itemList.css';
+import ItemCount from '../itemCount/ItemCount';
 
-const ItemListContainer = ({greeting}) =>{
+const ItemListContainer = ({greeting, stock = 10}) =>{
     return(
-        <div class='borderItem'>
+        <div className='borderItem'>
             <h1>{greeting}</h1>
+            <ItemCount stock={stock}/>
         </div>
         )
 }

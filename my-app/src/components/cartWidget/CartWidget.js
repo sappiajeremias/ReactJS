@@ -4,7 +4,7 @@ import Button from '../button/Button';
 
 const CartWidget = () =>{
     return(
-        <div class='align'>
+        <div className='align'>
             <RiShoppingCartLine className='iconCart'/>
             <Button link='3' className='buttonCart'/>
         </div>);

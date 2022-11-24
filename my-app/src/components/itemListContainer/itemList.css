@@ -3,11 +3,13 @@
     border-radius: 5px;
     display: flex;
     text-align: center;
+    align-items: center;
     width: 25%;
     margin-top: 50px;
     background-color: white;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 h1{

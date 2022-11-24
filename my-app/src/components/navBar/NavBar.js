@@ -13,7 +13,7 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div className='navOptions'>
-                    <ul class='optionList'>
+                    <ul className='optionList'>
                         <li>
                             <Button link='Balones'className='buttonFilter'></Button>
                         </li>
@@ -22,7 +22,7 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </div>
-                <div class='cart'>
+                <div className='cart'>
                     <CartWidget />
                 </div>
             </nav>
