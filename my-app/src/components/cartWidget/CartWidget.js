@@ -2,6 +2,7 @@ import './cartWidget.css';
 import {RiShoppingCartLine} from 'react-icons/ri';
 import Button from '../button/Button';
 
+
 const CartWidget = () =>{
     return(
         <div className='align'>

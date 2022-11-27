@@ -9,12 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <div className="containerGreeting">
+        <div >
 
-          <ItemListContainer greeting='Hola me llamo Jeremias!' stock={5}/>
-          <ItemListContainer greeting='Me gusta el futbol.'/>
-          <ItemListContainer greeting='Voy a vender pelotas y camisetas'/>
-          <ItemListContainer greeting='Todas historicas!'/>
+          <ItemListContainer />
+          
         </div>
         
         </header>

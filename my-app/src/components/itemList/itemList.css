@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 1500px;
+}
+
+.contenedorItem
+{
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

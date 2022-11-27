@@ -1,7 +1,7 @@
 .containerCantidad {
   display: flex;
   margin: 10px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 50px;
   width: 90%;
   flex-direction: row;
@@ -10,8 +10,10 @@
   border: 2px solid #39723D;
   border-radius: 5px;
 }
-.containerCantidad * {
-  margin: 5px;
+
+.contenedorContador{
+  width: 350px;
+  border-top: 1px solid black;
 }
 
 .botonRestar:disabled,
@@ -22,6 +24,7 @@
 }
 
 .botonRestar, .botonSumar {
+  height:30px;
   width: 150px;
   background-color: white;
   border-radius: 5px;
