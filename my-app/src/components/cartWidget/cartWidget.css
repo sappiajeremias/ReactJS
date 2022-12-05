@@ -1,10 +1,12 @@
-.iconCart{
+.iconCart,
+.iconCart:link{
     width: 40px;
     height: 40px;
     margin-right: 5px;
 }
 
-.iconCart:hover{
+.iconCart:hover,
+.iconCart:visited{
     color: aliceblue;
 }
 
@@ -17,4 +19,5 @@
 .align{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }

@@ -1,5 +1,6 @@
 .containerItem{
     display: block;
     text-align:center;
-    width: 400px;
+    border-bottom: 1px solid black;
+    width: 300px;
 }

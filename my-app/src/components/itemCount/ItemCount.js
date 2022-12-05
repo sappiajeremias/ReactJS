@@ -3,9 +3,9 @@ import "./itemCount.css";
 import { useState, useEffect } from "react";
 import { GrSubtract, GrAdd } from "react-icons/gr";
 
-const ItemCount = ({ itemStock }) => {
+const ItemCount = ({ inicio, itemStock, onAdd }) => {
   const [stock, setStock] = useState(itemStock);
-  const [add, setAdd] = useState(0);
+  const [add, setAdd] = useState(inicio);
 
   const buttonSumar = () => {
     setAdd(add + 1);
@@ -16,10 +16,7 @@ const ItemCount = ({ itemStock }) => {
     setStock(stock + 1);
   };
 
-  useEffect(() => {
-    console.log("Se creó el ítem");
-  }, []);
-
+ 
   useEffect(() => {
     console.log("Se modificó el ítem");
   }, [add]);
@@ -27,8 +24,7 @@ const ItemCount = ({ itemStock }) => {
   return (
     <div className="contenedorContador">
       <p>
-        <b>Stock: </b>
-        {stock}
+        <b>Stock: </b> {stock}
       </p>
       <div className="containerCantidad">
         <button
@@ -38,13 +34,16 @@ const ItemCount = ({ itemStock }) => {
         >
           <GrSubtract className="icono" />
         </button>
-        <h1>{add}</h1>
+        <span>{add}</span>
         <button
           disabled={add >= itemStock}
           className="botonSumar"
           onClick={buttonSumar}
         >
           <GrAdd className="icono" />
+        </button>
+        <button disabled={stock<=0} onClick={()=>onAdd(add)} className="botonCarrito">
+          <span>Agregar al carrito!</span>
         </button>
       </div>
     </div>

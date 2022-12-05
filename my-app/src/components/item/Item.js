@@ -1,11 +1,11 @@
 import "./item.css";
 
-const Item = ({ item }) => {
+const Item = ({ cItem }) => {
   return (
     <div className="containerItem">
-      <p className="textoItem"><b>Nombre: </b>{item.name}</p>
-      <p className="textoItem"><b>Detalle: </b>{item.detail}</p>
-      <p className="textoItem"><b>Precio: </b>{item.price}</p>
+      <p className="textoItem"><b>Nombre: </b>{cItem.name}</p>
+      <p className="textoItem"><b>Detalle: </b>{cItem.detail}</p>
+      <p className="textoItem"><b>Precio: </b>{cItem.price}</p>
     </div>
   );
 };

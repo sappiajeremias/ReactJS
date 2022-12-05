@@ -1,14 +1,20 @@
-import './cartWidget.css';
-import {RiShoppingCartLine} from 'react-icons/ri';
-import Button from '../button/Button';
+import "./cartWidget.css";
+import { RiShoppingCartLine } from "react-icons/ri";
+import Button from "../button/Button";
+import {Link} from "react-router-dom";
+
+const CartWidget = () => {
+  
 
 
-const CartWidget = () =>{
-    return(
-        <div className='align'>
-            <RiShoppingCartLine className='iconCart'/>
-            <Button link='3' className='buttonCart'/>
-        </div>);
-}
+  return (
+    <div className="align">
+      <Link to={'/cart'} className="iconCart">
+        <RiShoppingCartLine className="iconCart" />
+      </Link>
+      <Button link='3' className='buttonCart'/>
+    </div>
+  );
+};
 
 export default CartWidget;

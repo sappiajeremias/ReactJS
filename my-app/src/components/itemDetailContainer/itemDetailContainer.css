@@ -1,0 +1,19 @@
+.borderItem{
+   
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+

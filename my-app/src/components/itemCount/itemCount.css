@@ -1,15 +1,17 @@
 .containerCantidad {
   display: flex;
-  margin: 10px;
-  justify-content: space-between;
-  height: 50px;
-  width: 90%;
-  flex-direction: row;
-  align-content: stretch;
-  align-items: center;
-  border: 2px solid #39723D;
-  border-radius: 5px;
+    margin: 10px;
+    justify-content: space-around;
+
+    width: 90%;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
+    border: 2px solid #39723D;
+    border-radius: 5px;
+    flex-wrap: wrap;
 }
+
 
 .contenedorContador{
   width: 350px;
@@ -19,13 +21,14 @@
 .botonRestar:disabled,
 .botonRestar:enabled,
 .botonSumar:disabled,
-.botonSumar:enabled {
+.botonSumar:enabled,
+.botonCarrito {
   border-color: transparent;
 }
 
 .botonRestar, .botonSumar {
   height:30px;
-  width: 150px;
+  width: 125px;
   background-color: white;
   border-radius: 5px;
 }
@@ -36,10 +39,26 @@
   background-color: #f08aa7;
 }
 
+.botonCarrito:hover {
+
+  border-color: transparent;
+  background-color: #A9AF7E;
+}
+
 .botonSumar:hover {
 
   border-color: transparent;
   background-color: #9ab99c;
+}
+
+
+.botonCarrito{
+  margin-top: 8px;
+  margin-bottom: 4px;
+  height:30px;
+  width: 125px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .icono {

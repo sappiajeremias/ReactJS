@@ -1,16 +1,24 @@
 import Item from "../item/Item";
-import ItemCount from "../itemCount/ItemCount";
+import {Link} from 'react-router-dom';
+import Button from "../button/Button";
 import './itemList.css';
 
+
+
 const ItemList = ({items}) => {
+   
     return (
         <div  className='contenedor'>
-            {items.map((item)=>
+            
+            {items.map((item)=>{
+            return(
             <div className="contenedorItem">
-                    <Item item={item} key={item.id}/>
-                    <ItemCount itemStock={item.stock}/>
-                
-            </div>)}
+                <Item cItem={item} key={item.id}/>
+                <Link to={`/detail/${item.id}`} >
+                    <Button link='Detalles' className='buttonDetalles'>
+                </Button>
+                </Link>
+            </div>);})}
         </div>
         )
 }

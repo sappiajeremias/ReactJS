@@ -1,0 +1,12 @@
+.container-cart {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.container-info{
+    background-color: white;
+    width: 50%;
+}

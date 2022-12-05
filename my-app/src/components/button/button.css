@@ -27,3 +27,18 @@
     overflow: hidden;
    
 }
+
+.buttonDetalles{
+    background-color: #A9AF7E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 35px;
+    border-color: transparent;
+    border-radius: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonDetalles:hover{
+    background-color: #E6E5A3;
+}
