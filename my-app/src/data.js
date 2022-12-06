@@ -34,7 +34,8 @@ export const items = [
       detail: "Camiseta original usada por Maradona en el mundial '86",
       price: 150000,
       stock: 1,
-      idcat: 1
+      idcat: 1,
+      image: '/assets/images/maradona.jpg'
     },
     {
       id: '5',
@@ -52,7 +53,8 @@ export const items = [
         "Camiseta original usada por Juanfer Quintero en la final Libertadores 2018",
       price: 125000,
       stock: 1,
-      idcat: 1
+      idcat: 1,
+      image: '/assets/images/juanfer.jpg'
     },
     {
       id: '7',
@@ -60,6 +62,47 @@ export const items = [
       detail: "Camiseta original usada por Enzo Fernández en su debút",
       price: 100000,
       stock: 1,
-      idcat: 1
+      idcat: 1,
+      image: '/assets/images/enzo.jpg'
+    },{
+      id: '8',
+      name: "Camiseta River '86",
+      detail: "Camiseta original usada por River Plate en el mundial de clubes '86",
+      price: 100000,
+      stock: 1,
+      idcat: 1,
+      image: '/assets/images/river86.jpeg'
+    },{
+      id: '9',
+      name: "Camiseta Liverpool '21",
+      detail: "Camiseta original usada por Liverpool FC en la Champions League",
+      price: 50000,
+      stock: 1,
+      idcat: 1,
+      image: '/assets/images/liverpool.jpeg'
+    },{
+      id: '10',
+      name: "Fevernova",
+      detail: "Pelota mundial Korea/Japón 2002",
+      price: 12000,
+      stock: 10,
+      idcat: 2,
+      image: '/assets/images/fevernova.jpg'
+    },{
+      id: '11',
+      name: "+Teamgeist",
+      detail: "Pelota mundial Alemania 2006",
+      price: 10000,
+      stock: 15,
+      idcat: 2,
+      image: '/assets/images/teamgeist.jpg'
+    },{
+      id: '12',
+      name: "Camiseta Argentina '22",
+      detail: "Camiseta original usada por Ángel Di María",
+      price: 90000,
+      stock: 1,
+      idcat: 1,
+      image: '/assets/images/dimaria.jpeg'
     },
   ];

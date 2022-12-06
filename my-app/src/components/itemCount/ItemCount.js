@@ -42,7 +42,7 @@ const ItemCount = ({ inicio, itemStock, onAdd }) => {
         >
           <GrAdd className="icono" />
         </button>
-        <button disabled={stock<=0} onClick={()=>onAdd(add)} className="botonCarrito">
+        <button disabled={add===0} onClick={()=>onAdd(add)} className="botonCarrito">
           <span>Agregar al carrito!</span>
         </button>
       </div>

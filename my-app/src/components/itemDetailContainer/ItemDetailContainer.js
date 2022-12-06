@@ -1,25 +1,14 @@
 import ItemDetail from "../itemDetail/ItemDetail";
-import './itemDetailContainer.css';
-import { useState, useEffect } from "react";
+import "./itemDetailContainer.css";
 import { useParams } from "react-router-dom";
-import {items} from '../../data';
+import { items } from "../../data";
 
 const ItemDetailContainer = () => {
-  const [detalle, setDetalle] = useState([]);
-  const {idItem} = useParams();
- 
+  var detalle = {};
+  const { idItem } = useParams();
 
-  useEffect(() => {
-    const getDetalles = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({ items });
-      });
-    });
-    getDetalles.then((res) =>
-      // eslint-disable-next-line
-        (setDetalle(res.items.find((item) => item.id == idItem))))
-      }, []);
-
+  // eslint-disable-next-line
+  detalle = items.find((item) => item.id == idItem);
   return (
     <div className="borderItem">
       <ItemDetail item={detalle} />
