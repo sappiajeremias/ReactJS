@@ -1,17 +1,33 @@
 import ItemDetail from "../itemDetail/ItemDetail";
 import "./itemDetailContainer.css";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { items } from "../../data";
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+import Spinner from "../spinner/Spiner";
 
 const ItemDetailContainer = () => {
-  var detalle = {};
+  const [loading, setLoading] = useState(true);
   const { idItem } = useParams();
+  const [itemData, setItemData] = useState({});
 
-  // eslint-disable-next-line
-  detalle = items.find((item) => item.id == idItem);
+  useEffect(() => {
+    setLoading(true);
+    const db = getFirestore();
+    const itemRef = doc(db, 'items', idItem);
+    
+    getDoc(itemRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        setItemData({ id: snapshot.id, ...snapshot.data()});
+      }
+    }).finally(() => setLoading(false));
+  }, [idItem]);
+
+  if (loading) {
+    return <Spinner />;
+  }
   return (
     <div className="borderItem">
-      <ItemDetail item={detalle} />
+      <ItemDetail item={itemData} />
     </div>
   );
 };

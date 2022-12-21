@@ -5,6 +5,9 @@ import Home from "./routes/Home/Home";
 import Detail from "./routes/Detail/Detail";
 import Cart from "./routes/Cart/Cart";
 import Footer from "./components/footer/Footer";
+import React from "react";
+import CartProvider from './context/cartProvider/CartProvider';
+
 
 function App() {
   return (
@@ -12,13 +15,15 @@ function App() {
       <div className="App">
         <header className="App-header">
           <BrowserRouter>
-            <NavBar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/category/:type" element={<Home />} />
-              <Route path="/detail/:idItem" element={<Detail />} />
-              <Route path="/cart" element={<Cart />} />
-            </Routes>
+            <CartProvider>
+              <NavBar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/category/:type" element={<Home />} />
+                <Route path="/detail/:idItem" element={<Detail />} />
+                <Route path="/cart" element={<Cart />} />
+              </Routes>
+            </CartProvider>
           </BrowserRouter>
         </header>
         <Footer />

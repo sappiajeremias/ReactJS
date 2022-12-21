@@ -21,3 +21,20 @@
     align-items: center;
     text-decoration: none;
 }
+
+.cantidad{
+    display: flex;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #A9AF7E;
+    border-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

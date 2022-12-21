@@ -8,6 +8,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow: hidden;
     font-size:25px;
+    transition: all 0.3s;
 }
 
 .buttonFilter:hover{
@@ -28,12 +29,25 @@
    
 }
 
+.itemDetailCart {font-size: larger;
+    border: 1px solid #858b57;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.itemDetailCart:hover{
+    color: #000;
+    background-color: #E6E5A3;
+}
+
 .buttonDetalles{
     background-color: #A9AF7E;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100px;
     height: 35px;
+    transition: all 0.3s;
     border-color: transparent;
     border-radius: 15px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
