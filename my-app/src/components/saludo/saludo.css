@@ -1,0 +1,21 @@
+.textoSaludo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    background-color:#557153;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+.textoSaludo h2 {
+    text-align: center;
+}
+
+
+.textoOrden {
+    color: white;
+}

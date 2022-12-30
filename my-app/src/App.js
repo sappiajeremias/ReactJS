@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home/Home";
 import Detail from "./routes/Detail/Detail";
 import Cart from "./routes/Cart/Cart";
+import Saludo from "./components/saludo/Saludo";
 import Footer from "./components/footer/Footer";
 import React from "react";
 import CartProvider from './context/cartProvider/CartProvider';
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/category/:type" element={<Home />} />
                 <Route path="/detail/:idItem" element={<Detail />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/saludo/:idOrden" element={<Saludo/>}/>
               </Routes>
             </CartProvider>
           </BrowserRouter>
