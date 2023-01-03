@@ -1,9 +1,13 @@
 # ReactJS
 Repositorio para el curso de ReactJS de CoderHouse
 
-# Getting Started with Create React App
+# Clonar el proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+git clone https://github.com/sappiajeremias/ReactJS-Sappia.git
+```
+
+`npm install`
 
 ## Available Scripts
 
