@@ -62,3 +62,14 @@
 .containerInput button:hover{
     background-color: #E6E5A3;
 }
+
+pre {
+    width: 70%;
+    color: #fff;
+    font-size: larger;
+  }
+  
+ 
+ .containerInput p {
+    color: red;
+  }
